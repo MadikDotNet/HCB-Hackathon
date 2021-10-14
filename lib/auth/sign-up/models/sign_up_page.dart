@@ -1,0 +1,4 @@
+enum SignUpPage {
+  MainInformation,
+  Password,
+}
