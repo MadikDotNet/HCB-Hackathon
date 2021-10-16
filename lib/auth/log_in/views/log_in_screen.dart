@@ -7,6 +7,7 @@ import 'package:hcb_hackathon/auth/log_in/blocs/log_in_state.dart';
 import 'package:hcb_hackathon/auth/views/background.dart';
 import 'package:hcb_hackathon/auth/views/rounded_input_field.dart';
 import 'package:hcb_hackathon/auth/views/rounded_password_field.dart';
+import 'package:hcb_hackathon/home/views/custom_app_bar.dart';
 import 'package:hcb_hackathon/themes/filled_button.dart';
 import 'package:hcb_hackathon/themes/text_constants.dart';
 import 'package:hcb_hackathon/themes/theme_constants.dart';
@@ -19,6 +20,10 @@ class LogInScreen extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
 
     return Scaffold(
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(60.0),
+        child: CustomAppBar(),
+      ),
       body: BlocBuilder<LogInBloc, LogInState>(
         builder: (context, state) {
           return Background(
@@ -39,7 +44,6 @@ class LogInScreen extends StatelessWidget {
                     _passwordField(context, state),
                     _invalidFieldMessage(state.password),
                     _loginButton(context, state),
-                    _showSignUpButton(state),
                   ],
                 ),
               ),
@@ -79,9 +83,18 @@ class LogInScreen extends StatelessWidget {
         ? Center(
             child: CircularProgressIndicator(),
           )
-        : FilledButton(
-            text: 'Войти',
-            fillColor: kSecondaryColor,
+        : OutlinedButton(
+            style: OutlinedButton.styleFrom(
+              primary: Colors.white,
+              textStyle: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+              side: BorderSide(color: Colors.white, width: 1),
+              minimumSize: Size(double.infinity, 42),
+              padding: EdgeInsets.symmetric(horizontal: 16.0),
+              shape: const RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(Radius.circular(5)),
+              ),
+            ),
+            child: Text('Войти'),
             onPressed: () {
               if (_state.status == FormzStatus.valid) {
                 BlocProvider.of<LogInBloc>(context)

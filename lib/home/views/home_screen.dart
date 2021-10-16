@@ -28,10 +28,6 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(
-        preferredSize: const Size.fromHeight(60.0),
-        child: CustomAppBar(),
-      ),
       body: BlocConsumer<BottomNavigationBloc, BottomNavigationState>(
         listener: (context, state) => {
           if(state is QrCodePageState){

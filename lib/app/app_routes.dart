@@ -24,10 +24,4 @@ final kRouteWidgets = <String, Widget Function(BuildContext)>{
       child: LogInScreen(),
     );
   },
-  AppRoutes.signUp: (context) {
-    return BlocProvider(
-      create: (BuildContext context) => SignUpBloc(),
-      child: SignUpSreen(),
-    );
-  },
 };

@@ -5,6 +5,7 @@ import 'package:hcb_hackathon/auth/blocs/auth_event.dart';
 import 'package:hcb_hackathon/auth/blocs/auth_state.dart';
 import 'package:hcb_hackathon/auth/blocs/bloc_auth.dart';
 import 'package:hcb_hackathon/auth/views/welcome_screen.dart';
+import 'package:hcb_hackathon/home/views/custom_app_bar.dart';
 import 'package:hcb_hackathon/home/views/home_screen.dart';
 import 'package:hcb_hackathon/themes/theme_constants.dart';
 
@@ -35,6 +36,10 @@ class _HCBHackathonState extends State<HCBHackathon> {
           fontFamily: 'Poppins'),
       routes: kRouteWidgets,
       home: Scaffold(
+        appBar: PreferredSize(
+          preferredSize: const Size.fromHeight(60.0),
+          child: CustomAppBar(),
+        ),
         body: BlocBuilder<AuthBloc, AuthState>(
           builder: (context, state) {
             if (state is AuthAuthenticated) {

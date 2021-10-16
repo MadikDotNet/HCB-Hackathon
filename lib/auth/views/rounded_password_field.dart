@@ -28,14 +28,14 @@ class RoundedPasswordField extends StatelessWidget {
         decoration: InputDecoration(
           icon: Icon(
             Icons.lock,
-            color: kTextLightColor,
+            color: Colors.white,
           ),
           suffixIcon: Icon(
             Icons.visibility,
-            color: kTextLightColor,
+            color: Colors.white,
           ),
           hintText: hintText,
-          hintStyle: TextStyle(color: kTextLightColor),
+          hintStyle: TextStyle(color: Colors.white),
           border: InputBorder.none,
         ),
       ),

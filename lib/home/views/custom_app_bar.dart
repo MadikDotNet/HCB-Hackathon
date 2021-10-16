@@ -20,7 +20,7 @@ class CustomAppBar extends StatelessWidget {
       backgroundColor: Color(0xFFA10505),
       title: Image(
         image: AssetImage('assets/images/logo.png'),
-        width: size.width * 0.1,
+        width: size.width * 0.15,
         color: Colors.white,
       ),
       actions: [
