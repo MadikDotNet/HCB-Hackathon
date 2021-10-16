@@ -3,12 +3,11 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hcb_hackathon/home/blocs/bottom_navigation_bloc.dart';
 import 'package:hcb_hackathon/home/blocs/bottom_navigation_event.dart';
 import 'package:hcb_hackathon/home/blocs/bottom_navigation_state.dart';
+import 'package:hcb_hackathon/main_page/camera/camera_page.dart';
+import 'package:hcb_hackathon/main_page/wallet/views/wallet_screen.dart';
+import 'package:hcb_hackathon/products/screens/products_screen.dart';
 import 'package:hcb_hackathon/profile/views/profile_screen.dart';
-import 'package:hcb_hackathon/services/views/services_screen.dart';
 import 'package:hcb_hackathon/themes/theme_constants.dart';
-import 'package:hcb_hackathon/transactions/camera/camera_page.dart';
-import 'package:hcb_hackathon/transactions/history/views/history_screen.dart';
-import 'package:hcb_hackathon/transactions/wallet/views/wallet_screen.dart';
 
 import 'custom_app_bar.dart';
 
@@ -39,7 +38,7 @@ class _HomeScreenState extends State<HomeScreen> {
             Future.delayed(const Duration(seconds: 2),(){
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const CircularProgressIndicator()),
+                MaterialPageRoute(builder: (context) =>  ProductScreen()),
               );
             })
           }
@@ -47,10 +46,6 @@ class _HomeScreenState extends State<HomeScreen> {
         builder: (context, state) {
           if (state is WalletPageLoadedState) {
             return WalletScreen();
-          }
-
-          if (state is ServicesPageLoadedState) {
-            return ServicesScreen();
           }
 
           if (state is QrCodePageState) {

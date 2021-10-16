@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:hcb_hackathon/main_page/wallet/views/balance.dart';
 import 'package:hcb_hackathon/profile/views/support_screen.dart';
 import 'package:hcb_hackathon/themes/text_constants.dart';
 import 'package:hcb_hackathon/themes/theme_constants.dart';
-import 'package:hcb_hackathon/transactions/wallet/views/balance.dart';
 
 import 'edit_screen.dart';
 
