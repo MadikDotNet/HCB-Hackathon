@@ -98,9 +98,9 @@ class _HomeScreenState extends State<HomeScreen> {
             label: "Профиль"),
         BottomNavigationBarItem(
             icon: ImageIcon(
-              AssetImage('assets/images/profile.png'),
+              AssetImage('assets/images/camera.svg'),
             ),
-            label: "QR"),
+            label: "Смарт камера"),
       ],
       onTap: (index) => BlocProvider.of<BottomNavigationBloc>(context)
           .add(PageTappedEvent(index: index)),
