@@ -34,8 +34,15 @@ class _HomeScreenState extends State<HomeScreen> {
         child: CustomAppBar(),
       ),
       body: BlocConsumer<BottomNavigationBloc, BottomNavigationState>(
-        listener: (context, state) {
-          if (state is QrCodePageState) {}
+        listener: (context, state) => {
+          if(state is QrCodePageState){
+            Future.delayed(const Duration(seconds: 2),(){
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const CircularProgressIndicator()),
+              );
+            })
+          }
         },
         builder: (context, state) {
           if (state is WalletPageLoadedState) {
@@ -52,6 +59,10 @@ class _HomeScreenState extends State<HomeScreen> {
 
           if (state is ProfilePageLoadedState) {
             return ProfileScreen();
+          }
+
+          if (state is PageLoadingState) {
+            return CircularProgressIndicator();
           }
 
           return CircularProgressIndicator();
