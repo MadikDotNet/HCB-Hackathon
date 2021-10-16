@@ -1,4 +1,5 @@
 import 'package:camera/camera.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
@@ -34,8 +35,8 @@ class BottomNavigationBloc
       }
 
       if (currentIndex == 2) {
-        List<CameraDescription> camera = await availableCameras();
-
+        var camera = await availableCameras();
+        
         yield QrCodePageState(cameraDescription: camera.first);
       }
 
