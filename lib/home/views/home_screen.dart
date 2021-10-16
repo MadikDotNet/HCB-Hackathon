@@ -110,7 +110,7 @@ class _HomeScreenState extends State<HomeScreen> {
 }
 
 Widget getCameraPage() {
-  var cameras;
-  availableCameras().then((value) => cameras = value);
+  var cameras = <CameraDescription>[];
+  availableCameras().then((value) => debugPrint('value: $value'));
   return CameraApp(cameras);
 }
