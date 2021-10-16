@@ -22,6 +22,8 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     super.initState();
+    BlocProvider.of<BottomNavigationBloc>(context)
+        .add(PageTappedEvent(index: 0));
     BlocProvider.of<BottomNavigationBloc>(context).add(HomePageOpenedEvent());
   }
 
