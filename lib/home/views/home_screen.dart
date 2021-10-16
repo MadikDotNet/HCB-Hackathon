@@ -52,8 +52,10 @@ class _HomeScreenState extends State<HomeScreen> {
             return ProfileScreen();
           }
 
-          if (state is PageLoadingState) {
-            return CircularProgressIndicator();
+          if (state is ServicesPageLoadedState) {
+            return Center(
+              child: CircularProgressIndicator(color: Color(0xFFA10505)),
+            );
           }
 
           return CircularProgressIndicator();
