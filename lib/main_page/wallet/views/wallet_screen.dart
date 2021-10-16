@@ -15,7 +15,6 @@ class WalletScreen extends StatelessWidget {
         padding: EdgeInsets.symmetric(horizontal: kSpacingUnit * 2),
         child: ListView(
           children: [
-            Balance(),
             Column(
               children: [_topUpWalletButton(context), TiedCards()],
             )
