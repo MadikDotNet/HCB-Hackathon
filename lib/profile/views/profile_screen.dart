@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:hcb_hackathon/home/views/custom_app_bar.dart';
-import 'package:hcb_hackathon/main_page/wallet/views/balance.dart';
-import 'package:hcb_hackathon/profile/views/support_screen.dart';
 import 'package:hcb_hackathon/themes/text_constants.dart';
 import 'package:hcb_hackathon/themes/theme_constants.dart';
 
-import 'edit_screen.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({Key? key}) : super(key: key);

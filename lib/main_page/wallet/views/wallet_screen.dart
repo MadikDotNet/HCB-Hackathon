@@ -3,7 +3,6 @@ import 'package:hcb_hackathon/cards/tied/views/tied.dart';
 import 'package:hcb_hackathon/main_page/deposit/views/deposit_screen.dart';
 import 'package:hcb_hackathon/themes/theme_constants.dart';
 
-import 'balance.dart';
 
 class WalletScreen extends StatelessWidget {
   const WalletScreen({Key? key}) : super(key: key);
