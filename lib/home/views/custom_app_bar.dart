@@ -17,6 +17,7 @@ class CustomAppBar extends StatelessWidget {
       centerTitle: true,
       shadowColor: kShadowColor1,
       elevation: 10,
+      backgroundColor: Color(0xFFA10505),
       title: Image(
         image: AssetImage('assets/images/logo.png'),
         width: size.width * 0.4,
