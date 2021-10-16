@@ -32,15 +32,11 @@ class BottomNavigationBloc
       }
 
       if (currentIndex == 2) {
-        yield HistoryPageLoadedState();
+        yield QrCodePageState();
       }
 
       if (currentIndex == 3) {
         yield ProfilePageLoadedState();
-      }
-
-      if (currentIndex == 4) {
-        yield QrCodePageState();
       }
     }
   }

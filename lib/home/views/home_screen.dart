@@ -43,16 +43,12 @@ class _HomeScreenState extends State<HomeScreen> {
             return ServicesScreen();
           }
 
-          if (state is HistoryPageLoadedState) {
-            return HistoryScreen();
+          if (state is QrCodePageState) {
+            return CameraPage();
           }
 
           if (state is ProfilePageLoadedState) {
             return ProfileScreen();
-          }
-
-          if (state is QrCodePageState) {
-            return CameraPage();
           }
 
           return CircularProgressIndicator();
@@ -78,29 +74,24 @@ class _HomeScreenState extends State<HomeScreen> {
       items: const <BottomNavigationBarItem>[
         BottomNavigationBarItem(
             icon: ImageIcon(
-              AssetImage('assets/images/wallet.png'),
+              AssetImage('assets/images/home.svg'),
             ),
-            label: "Кошелек"),
+            label: "Главная"),
         BottomNavigationBarItem(
             icon: ImageIcon(
-              AssetImage('assets/images/services.png'),
+              AssetImage('assets/images/catalog.svg'),
             ),
-            label: "Услуги"),
-        BottomNavigationBarItem(
-            icon: ImageIcon(
-              AssetImage('assets/images/history.png'),
-            ),
-            label: "История"),
-        BottomNavigationBarItem(
-            icon: ImageIcon(
-              AssetImage('assets/images/profile.png'),
-            ),
-            label: "Профиль"),
+            label: "Каталог"),
         BottomNavigationBarItem(
             icon: ImageIcon(
               AssetImage('assets/images/camera.svg'),
             ),
             label: "Смарт камера"),
+        BottomNavigationBarItem(
+            icon: ImageIcon(
+              AssetImage('assets/images/cart.svg'),
+            ),
+            label: "Корзина"),
       ],
       onTap: (index) => BlocProvider.of<BottomNavigationBloc>(context)
           .add(PageTappedEvent(index: index)),
