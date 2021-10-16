@@ -1,5 +1,4 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:hcb_hackathon/transactions/qr_code/camera.dart';
 import 'package:injectable/injectable.dart';
 
 import 'bottom_navigation_event.dart';

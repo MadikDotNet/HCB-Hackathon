@@ -1,4 +1,3 @@
-import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hcb_hackathon/home/blocs/bottom_navigation_bloc.dart';
@@ -7,8 +6,8 @@ import 'package:hcb_hackathon/home/blocs/bottom_navigation_state.dart';
 import 'package:hcb_hackathon/profile/views/profile_screen.dart';
 import 'package:hcb_hackathon/services/views/services_screen.dart';
 import 'package:hcb_hackathon/themes/theme_constants.dart';
+import 'package:hcb_hackathon/transactions/camera/camera_page.dart';
 import 'package:hcb_hackathon/transactions/history/views/history_screen.dart';
-import 'package:hcb_hackathon/transactions/qr_code/camera.dart';
 import 'package:hcb_hackathon/transactions/wallet/views/wallet_screen.dart';
 
 import 'custom_app_bar.dart';
@@ -53,7 +52,7 @@ class _HomeScreenState extends State<HomeScreen> {
           }
 
           if (state is QrCodePageState) {
-            return getCameraPage();
+            return CameraPage();
           }
 
           return CircularProgressIndicator();
@@ -109,8 +108,3 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 }
 
-Widget getCameraPage() {
-  var cameras = <CameraDescription>[];
-  availableCameras().then((value) => debugPrint('value: $value'));
-  return CameraApp(cameras);
-}
