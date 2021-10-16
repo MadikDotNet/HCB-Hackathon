@@ -16,3 +16,5 @@ const kTextColor = Color(0xFF151C2A);
 const kTextLightColor = Color(0xFFBEBBDB);
 const kPositiveColor = Color(0xFF0BB21A);
 const kShadowColor1 = Color.fromRGBO(0, 0, 0, 0.3);
+
+const kMainColor = Color(0xFFA10505);

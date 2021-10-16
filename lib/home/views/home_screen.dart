@@ -70,7 +70,7 @@ class _HomeScreenState extends State<HomeScreen> {
         BlocProvider.of<BottomNavigationBloc>(context);
 
     return BottomNavigationBar(
-      selectedItemColor: kAccentColor,
+      selectedItemColor: kMainColor,
       unselectedItemColor: Colors.grey[500],
       showUnselectedLabels: true,
       currentIndex: bloc.currentIndex,
