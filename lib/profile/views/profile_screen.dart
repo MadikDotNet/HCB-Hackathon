@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hcb_hackathon/home/views/custom_app_bar.dart';
 import 'package:hcb_hackathon/main_page/wallet/views/balance.dart';
 import 'package:hcb_hackathon/profile/views/support_screen.dart';
 import 'package:hcb_hackathon/themes/text_constants.dart';
@@ -12,48 +13,15 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: kSpacingUnit * 2),
-        child: ListView(
-          children: [
-            Balance(),
-            Balance(),
-            Container(
-              width: double.infinity,
-              margin: EdgeInsets.symmetric(vertical: kSpacingUnit * 2),
-              padding: EdgeInsets.symmetric(
-                  vertical: kSpacingUnit, horizontal: kSpacingUnit * 2),
-              decoration: BoxDecoration(
-                color: Colors.white,
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black12,
-                    blurRadius: kSpacingUnit,
-                    offset: Offset(0, kSpacingUnit / 2),
-                  ),
-                ],
-                borderRadius: BorderRadius.all(
-                  Radius.circular(kSpacingUnit),
-                ),
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  _listItem(
-                      context, 'assets/images/mycards.png', 'Смартфон Apple iPhone 13 \n Pro 128GB Sierra Blue', ''),
-                  _listItem(context, 'assets/images/security.png',
-                      'Доступ и безопасность', EditScreen()),
-                  _listItem(context, 'assets/images/userguide.png',
-                      'Служба поддержки', SupportScreen()),
-                  _listItem(context, 'assets/images/rules.png',
-                      'Правила системы', ''),
-                  _listItem(context, 'assets/images/logout.png',
-                      'Выйти из кошелька', ''),
-                ],
-              ),
-            ),
-          ],
-        ),
+      body: ListView
+        (
+        children: [
+          SingleChildScrollView(
+              child: Image.asset(
+                'assets/images/cart-page.png',
+              )
+          )
+        ],
       ),
     );
   }
