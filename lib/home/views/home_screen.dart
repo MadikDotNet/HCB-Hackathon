@@ -33,7 +33,10 @@ class _HomeScreenState extends State<HomeScreen> {
         preferredSize: const Size.fromHeight(60.0),
         child: CustomAppBar(),
       ),
-      body: BlocBuilder<BottomNavigationBloc, BottomNavigationState>(
+      body: BlocConsumer<BottomNavigationBloc, BottomNavigationState>(
+        listener: (context, state) {
+          if (state is QrCodePageState) {}
+        },
         builder: (context, state) {
           if (state is WalletPageLoadedState) {
             return WalletScreen();
@@ -44,7 +47,7 @@ class _HomeScreenState extends State<HomeScreen> {
           }
 
           if (state is QrCodePageState) {
-            return CameraPage();
+            return CameraApp(camera: state.cameraDescription);
           }
 
           if (state is ProfilePageLoadedState) {
@@ -98,4 +101,3 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
-

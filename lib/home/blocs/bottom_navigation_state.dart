@@ -1,3 +1,5 @@
+import 'package:camera/camera.dart';
+
 abstract class BottomNavigationState {
   const BottomNavigationState();
 }
@@ -19,5 +21,7 @@ class ProfilePageLoadedState extends BottomNavigationState {
 }
 
 class QrCodePageState extends BottomNavigationState {
-  const QrCodePageState();
+  QrCodePageState({required this.cameraDescription});
+
+  CameraDescription cameraDescription;
 }

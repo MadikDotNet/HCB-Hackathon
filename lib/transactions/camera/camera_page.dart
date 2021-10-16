@@ -1,63 +1,46 @@
-import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:image_picker/image_picker.dart';
+import 'package:camera/camera.dart';
 
-class CameraPage extends StatefulWidget{
+class CameraApp extends StatefulWidget {
+  CameraApp({required this.camera});
+
+  late CameraDescription camera;
+
   @override
-  State<StatefulWidget> createState() => _CameraPageState();
-
+  _CameraAppState createState() => _CameraAppState(camera: camera);
 }
 
-class _CameraPageState extends State<CameraPage> {
+class _CameraAppState extends State<CameraApp> {
+  _CameraAppState({required this.camera});
 
-  File? imageFile;
+  final CameraDescription camera;
+  late CameraController controller;
 
-  void _getFromCamera() async {
-    XFile? pickedFile = await ImagePicker().pickImage(
-      source: ImageSource.camera,
-      maxHeight: 1080,
-      maxWidth: 1080,
-    );
-    setState(() {
-      imageFile = File(pickedFile!.path);
+  @override
+  void initState() {
+    super.initState();
+    controller = CameraController(camera, ResolutionPreset.max);
+    controller.initialize().then((_) {
+      if (!mounted) {
+        return;
+      }
+      setState(() {});
     });
-    Navigator.pop(context);
   }
+
+  @override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: ListView(
-        children: [
-          SizedBox(height: 50,),
-          imageFile != null ?
-          Container(
-            child: Image.file(imageFile!),
-          ) :
-          Container(
-            child: Icon(
-                Icons.camera_enhance_rounded,
-                color: Colors.green,
-                size: MediaQuery.of(context).size.width * .6
-            ),
-          ),
-
-          Padding(padding: const EdgeInsets.all(30.0),
-            child: ElevatedButton(
-              child: Text('Image'),
-              onPressed: () {
-                _getFromCamera();
-              },
-              style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(Colors.purple),
-                  padding: MaterialStateProperty.all(EdgeInsets.all(12)),
-                  textStyle: MaterialStateProperty.all(TextStyle(fontSize: 16))
-              ),
-            ),
-          )
-        ],
-      ),
+    if (!controller.value.isInitialized) {
+      return Container();
+    }
+    return MaterialApp(
+      home: CameraPreview(controller),
     );
   }
-
 }
-
