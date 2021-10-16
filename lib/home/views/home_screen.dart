@@ -9,8 +9,6 @@ import 'package:hcb_hackathon/products/screens/products_screen.dart';
 import 'package:hcb_hackathon/profile/views/profile_screen.dart';
 import 'package:hcb_hackathon/themes/theme_constants.dart';
 
-import 'custom_app_bar.dart';
-
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -32,7 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       body: BlocConsumer<BottomNavigationBloc, BottomNavigationState>(
         listener: (context, state) => {
-          if(state is QrCodePageState){
+          if(state is CameraPageState){
             Future.delayed(const Duration(seconds: 2),(){
               Navigator.push(
                 context,
@@ -46,12 +44,12 @@ class _HomeScreenState extends State<HomeScreen> {
             return WalletScreen();
           }
 
-          if (state is QrCodePageState) {
+          if (state is CameraPageState) {
             return CameraApp(camera: state.cameraDescription);
           }
 
-          if (state is ProfilePageLoadedState) {
-            return ProfileScreen();
+          if (state is CartPageLoadedState) {
+            return CartScreen();
           }
 
           if (state is ServicesPageLoadedState) {

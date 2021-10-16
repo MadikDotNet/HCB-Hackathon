@@ -1,9 +1,6 @@
 import 'package:camera/camera.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
-
 import 'bottom_navigation_event.dart';
 import 'bottom_navigation_state.dart';
 
@@ -37,11 +34,11 @@ class BottomNavigationBloc
       if (currentIndex == 2) {
         var camera = await availableCameras();
         
-        yield QrCodePageState(cameraDescription: camera.first);
+        yield CameraPageState(cameraDescription: camera.first);
       }
 
       if (currentIndex == 3) {
-        yield ProfilePageLoadedState();
+        yield CartPageLoadedState();
       }
     }
   }

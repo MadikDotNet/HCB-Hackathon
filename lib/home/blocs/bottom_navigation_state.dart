@@ -16,12 +16,12 @@ class ServicesPageLoadedState extends BottomNavigationState {
   const ServicesPageLoadedState();
 }
 
-class ProfilePageLoadedState extends BottomNavigationState {
-  const ProfilePageLoadedState();
+class CartPageLoadedState extends BottomNavigationState {
+  const CartPageLoadedState();
 }
 
-class QrCodePageState extends BottomNavigationState {
-  QrCodePageState({required this.cameraDescription});
+class CameraPageState extends BottomNavigationState {
+  CameraPageState({required this.cameraDescription});
 
   CameraDescription cameraDescription;
 }

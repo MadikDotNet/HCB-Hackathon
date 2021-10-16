@@ -1,5 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:hcb_hackathon/config/di.dart';
+import 'package:hcb_hackathon/home/blocs/bottom_navigation_bloc.dart';
+import 'package:hcb_hackathon/home/blocs/bottom_navigation_event.dart';
 import 'package:hcb_hackathon/home/views/custom_app_bar.dart';
 
 class ProductScreen extends StatelessWidget {
@@ -24,6 +28,7 @@ class ProductScreen extends StatelessWidget {
               onSurface: Colors.red,
             ),
             onPressed: (){
+              BlocProvider.of<BottomNavigationBloc>(context).add(PageTappedEvent(index: 3));
               Navigator.pop(context);
             },
             child: Text('Добавить в корзину'),

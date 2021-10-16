@@ -40,6 +40,7 @@ class _CameraAppState extends State<CameraApp> {
       return Container();
     }
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: CameraPreview(controller),
     );
   }
