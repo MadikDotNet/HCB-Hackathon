@@ -1,3 +1,4 @@
+import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hcb_hackathon/home/blocs/bottom_navigation_bloc.dart';
@@ -7,6 +8,7 @@ import 'package:hcb_hackathon/profile/views/profile_screen.dart';
 import 'package:hcb_hackathon/services/views/services_screen.dart';
 import 'package:hcb_hackathon/themes/theme_constants.dart';
 import 'package:hcb_hackathon/transactions/history/views/history_screen.dart';
+import 'package:hcb_hackathon/transactions/qr_code/camera.dart';
 import 'package:hcb_hackathon/transactions/wallet/views/wallet_screen.dart';
 
 import 'custom_app_bar.dart';
@@ -50,6 +52,10 @@ class _HomeScreenState extends State<HomeScreen> {
             return ProfileScreen();
           }
 
+          if (state is QrCodePageState) {
+            return getCameraPage();
+          }
+
           return CircularProgressIndicator();
         },
       ),
@@ -91,9 +97,20 @@ class _HomeScreenState extends State<HomeScreen> {
               AssetImage('assets/images/profile.png'),
             ),
             label: "Профиль"),
+        BottomNavigationBarItem(
+            icon: ImageIcon(
+              AssetImage('assets/images/profile.png'),
+            ),
+            label: "QR"),
       ],
       onTap: (index) => BlocProvider.of<BottomNavigationBloc>(context)
           .add(PageTappedEvent(index: index)),
     );
   }
+}
+
+Widget getCameraPage() {
+  var cameras;
+  availableCameras().then((value) => cameras = value);
+  return CameraApp(cameras);
 }

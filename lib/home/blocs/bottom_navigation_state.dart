@@ -6,18 +6,22 @@ class PageLoadingState extends BottomNavigationState {
   const PageLoadingState();
 }
 
-class WalletPageLoadedState extends BottomNavigationState{
+class WalletPageLoadedState extends BottomNavigationState {
   const WalletPageLoadedState();
 }
 
-class ServicesPageLoadedState extends BottomNavigationState{
+class ServicesPageLoadedState extends BottomNavigationState {
   const ServicesPageLoadedState();
 }
 
-class HistoryPageLoadedState extends BottomNavigationState{
+class HistoryPageLoadedState extends BottomNavigationState {
   const HistoryPageLoadedState();
 }
 
-class ProfilePageLoadedState extends BottomNavigationState{
+class ProfilePageLoadedState extends BottomNavigationState {
   const ProfilePageLoadedState();
+}
+
+class QrCodePageState extends BottomNavigationState {
+  const QrCodePageState();
 }
