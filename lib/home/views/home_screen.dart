@@ -77,22 +77,22 @@ class _HomeScreenState extends State<HomeScreen> {
       items: const <BottomNavigationBarItem>[
         BottomNavigationBarItem(
             icon: ImageIcon(
-              AssetImage('assets/images/home.svg'),
+              AssetImage('assets/images/red-home.png'),
             ),
             label: "Главная"),
         BottomNavigationBarItem(
             icon: ImageIcon(
-              AssetImage('assets/images/catalog.svg'),
+              AssetImage('assets/images/red-catalog.png'),
             ),
             label: "Каталог"),
         BottomNavigationBarItem(
             icon: ImageIcon(
-              AssetImage('assets/images/camera.svg'),
+              AssetImage('assets/images/red-scanner.png'),
             ),
             label: "Смарт камера"),
         BottomNavigationBarItem(
             icon: ImageIcon(
-              AssetImage('assets/images/cart.svg'),
+              AssetImage('assets/images/red-cart.png'),
             ),
             label: "Корзина"),
       ],
