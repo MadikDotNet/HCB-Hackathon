@@ -16,7 +16,7 @@ class Background extends StatelessWidget {
       width: double.infinity,
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage('assets/images/welcome_bg.png'),
+          image: AssetImage('assets/images/start-page-bg.png'),
           fit: BoxFit.cover,
         ),
       ),

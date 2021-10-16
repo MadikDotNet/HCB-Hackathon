@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hcb_hackathon/app/app_routes.dart';
-import 'package:hcb_hackathon/themes/filled_button.dart';
 import 'package:hcb_hackathon/themes/text_constants.dart';
 import 'package:hcb_hackathon/themes/theme_constants.dart';
 import 'background.dart';
@@ -21,30 +20,18 @@ class WelcomeScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'Добро пожаловать\n в EasyWallet',
+              'Добро пожаловать\n в Home Credit Bank',
               style: kHeadingTextStyle.copyWith(color: Colors.white),
               textAlign: TextAlign.center,
             ),
             SizedBox(height: kSpacingUnit * 2),
             Text(
-              'Мы разработали современное и простое в использовании приложение, которое поможет вам переводить деньги всего за несколько кликов.',
-              style: kBodyTextStyle.copyWith(color: kTextLightColor),
+              'Мы разработали современное и простое в использовании приложение,'
+                  ' которое поможет вам приобретать всего за несколько кликов.',
+              style: kBodyTextStyle.copyWith(color: Colors.white),
               textAlign: TextAlign.center,
             ),
             SizedBox(height: kSpacingUnit * 2),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                FilledButton(
-                  text: 'Войти',
-                  fillColor: kSecondaryColor,
-                  onPressed: () {
-                    Navigator.pushNamed(context, AppRoutes.logIn);
-                  },
-                ),
-              ],
-            ),
-            SizedBox(height: kSpacingUnit),
             OutlinedButton(
               style: OutlinedButton.styleFrom(
                 primary: Colors.white,
@@ -56,9 +43,9 @@ class WelcomeScreen extends StatelessWidget {
                   borderRadius: BorderRadius.all(Radius.circular(5)),
                 ),
               ),
-              child: Text('Создать кошелёк'),
+              child: Text('Войти'),
               onPressed: () {
-                Navigator.pushNamed(context, AppRoutes.signUp);
+                Navigator.pushNamed(context, AppRoutes.logIn);
               },
             ),
           ],

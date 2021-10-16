@@ -16,6 +16,17 @@ class ProductScreen extends StatelessWidget {
           Image.asset(
             'assets/images/product.png',
             alignment: Alignment.center,
+          ),
+          TextButton(
+            style: TextButton.styleFrom(
+              backgroundColor: Colors.blue,
+              primary: Colors.white,
+              onSurface: Colors.red,
+            ),
+            onPressed: (){
+              Navigator.pop(context);
+            },
+            child: Text('Добавить в корзину'),
           )
         ],
       ),
