@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:formz/formz.dart';
-import 'package:hj_banking_mobile/auth/views/background.dart';
-import 'package:hj_banking_mobile/auth/views/rounded_input_field.dart';
-import 'package:hj_banking_mobile/auth/views/rounded_password_field.dart';
-import 'package:hj_banking_mobile/auth/log_in/blocs/log_in_bloc.dart';
-import 'package:hj_banking_mobile/auth/log_in/blocs/log_in_event.dart';
-import 'package:hj_banking_mobile/auth/log_in/blocs/log_in_state.dart';
-import 'package:hj_banking_mobile/themes/filled_button.dart';
-import 'package:hj_banking_mobile/themes/text_constants.dart';
-import 'package:hj_banking_mobile/themes/theme_constants.dart';
+import 'package:hcb_hackathon/auth/log_in/blocs/log_in_bloc.dart';
+import 'package:hcb_hackathon/auth/log_in/blocs/log_in_event.dart';
+import 'package:hcb_hackathon/auth/log_in/blocs/log_in_state.dart';
+import 'package:hcb_hackathon/auth/views/background.dart';
+import 'package:hcb_hackathon/auth/views/rounded_input_field.dart';
+import 'package:hcb_hackathon/auth/views/rounded_password_field.dart';
+import 'package:hcb_hackathon/themes/filled_button.dart';
+import 'package:hcb_hackathon/themes/text_constants.dart';
+import 'package:hcb_hackathon/themes/theme_constants.dart';
 
 class LogInScreen extends StatelessWidget {
   const LogInScreen({Key? key}) : super(key: key);

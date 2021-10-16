@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:hj_banking_mobile/home/blocs/bottom_navigation_bloc.dart';
-import 'package:hj_banking_mobile/home/blocs/bottom_navigation_event.dart';
-import 'package:hj_banking_mobile/home/blocs/bottom_navigation_state.dart';
-import 'package:hj_banking_mobile/home/views/custom_app_bar.dart';
-import 'package:hj_banking_mobile/profile/views/profile_screen.dart';
-import 'package:hj_banking_mobile/services/views/services_screen.dart';
-import 'package:hj_banking_mobile/themes/theme_constants.dart';
-import 'package:hj_banking_mobile/transactions/history/views/history_screen.dart';
-import 'package:hj_banking_mobile/transactions/wallet/views/wallet_screen.dart';
+import 'package:hcb_hackathon/home/blocs/bottom_navigation_bloc.dart';
+import 'package:hcb_hackathon/home/blocs/bottom_navigation_event.dart';
+import 'package:hcb_hackathon/home/blocs/bottom_navigation_state.dart';
+import 'package:hcb_hackathon/profile/views/profile_screen.dart';
+import 'package:hcb_hackathon/services/views/services_screen.dart';
+import 'package:hcb_hackathon/themes/theme_constants.dart';
+import 'package:hcb_hackathon/transactions/history/views/history_screen.dart';
+import 'package:hcb_hackathon/transactions/wallet/views/wallet_screen.dart';
+
+import 'custom_app_bar.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);

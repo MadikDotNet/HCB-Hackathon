@@ -1,4 +1,4 @@
-import 'package:hj_banking_mobile/auth/data/providers/token_storage.dart';
+import 'package:hcb_hackathon/auth/data/providers/token_storage.dart';
 import 'package:injectable/injectable.dart';
 
 @Singleton(as: TokenStorage, env: [Environment.dev, Environment.test])

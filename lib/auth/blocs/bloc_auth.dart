@@ -1,8 +1,9 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:hj_banking_mobile/auth/blocs/auth_event.dart';
-import 'package:hj_banking_mobile/auth/blocs/auth_state.dart';
-import 'package:hj_banking_mobile/auth/data/auth_repository.dart';
+import 'package:hcb_hackathon/auth/data/auth_repository.dart';
 import 'package:injectable/injectable.dart';
+
+import 'auth_event.dart';
+import 'auth_state.dart';
 
 @injectable
 class AuthBloc extends Bloc<AuthEvent, AuthState> {

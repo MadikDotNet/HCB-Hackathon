@@ -2,12 +2,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:formz/formz.dart';
-import 'package:hj_banking_mobile/auth/blocs/auth_bloc.dart';
-import 'package:hj_banking_mobile/auth/blocs/auth_event.dart';
-import 'package:hj_banking_mobile/auth/log_in/models/log_in_password.dart';
-import 'package:hj_banking_mobile/auth/log_in/models/log_in_username.dart';
-import 'package:hj_banking_mobile/auth/log_in/views/alert_dialogs.dart';
-import 'package:hj_banking_mobile/auth/data/auth_repository.dart';
+import 'package:hcb_hackathon/auth/blocs/auth_event.dart';
+import 'package:hcb_hackathon/auth/blocs/bloc_auth.dart';
+import 'package:hcb_hackathon/auth/data/auth_repository.dart';
+import 'package:hcb_hackathon/auth/log_in/models/log_in_password.dart';
+import 'package:hcb_hackathon/auth/log_in/models/log_in_username.dart';
+import 'package:hcb_hackathon/auth/log_in/views/alert_dialogs.dart';
 import 'package:injectable/injectable.dart';
 
 import 'log_in_event.dart';

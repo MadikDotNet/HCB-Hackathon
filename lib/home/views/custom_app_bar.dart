@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:hj_banking_mobile/auth/blocs/auth_bloc.dart';
-import 'package:hj_banking_mobile/auth/blocs/auth_event.dart';
-import 'package:hj_banking_mobile/themes/theme_constants.dart';
+import 'package:hcb_hackathon/auth/blocs/auth_event.dart';
+import 'package:hcb_hackathon/auth/blocs/bloc_auth.dart';
+import 'package:hcb_hackathon/themes/theme_constants.dart';
 
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({

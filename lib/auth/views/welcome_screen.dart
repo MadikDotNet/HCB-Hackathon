@@ -1,11 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:hj_banking_mobile/app/app_routes.dart';
-import 'package:hj_banking_mobile/auth/views/background.dart';
-import 'package:hj_banking_mobile/themes/filled_button.dart';
-import 'package:hj_banking_mobile/themes/text_constants.dart';
-import 'package:hj_banking_mobile/themes/theme_constants.dart';
+import 'package:hcb_hackathon/app/app_routes.dart';
+import 'package:hcb_hackathon/themes/filled_button.dart';
+import 'package:hcb_hackathon/themes/text_constants.dart';
+import 'package:hcb_hackathon/themes/theme_constants.dart';
+import 'background.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({Key? key}) : super(key: key);

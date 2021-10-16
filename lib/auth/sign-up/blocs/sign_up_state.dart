@@ -1,10 +1,10 @@
 import 'package:equatable/equatable.dart';
 import 'package:formz/formz.dart';
-import 'package:hj_banking_mobile/auth/sign-up/models/sign_up_email.dart';
-import 'package:hj_banking_mobile/auth/sign-up/models/sign_up_page.dart';
-import 'package:hj_banking_mobile/auth/sign-up/models/sign_up_password.dart';
-import 'package:hj_banking_mobile/auth/sign-up/models/sign_up_phone_number.dart';
-import 'package:hj_banking_mobile/auth/sign-up/models/sign_up_user_name.dart';
+import 'package:hcb_hackathon/auth/sign-up/models/sign_up_email.dart';
+import 'package:hcb_hackathon/auth/sign-up/models/sign_up_page.dart';
+import 'package:hcb_hackathon/auth/sign-up/models/sign_up_password.dart';
+import 'package:hcb_hackathon/auth/sign-up/models/sign_up_phone_number.dart';
+import 'package:hcb_hackathon/auth/sign-up/models/sign_up_user_name.dart';
 
 class SignUpState extends Equatable with FormzMixin {
   const SignUpState({

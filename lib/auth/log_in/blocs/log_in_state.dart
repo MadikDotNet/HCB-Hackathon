@@ -1,7 +1,7 @@
 import 'package:equatable/equatable.dart';
 import 'package:formz/formz.dart';
-import 'package:hj_banking_mobile/auth/log_in/models/log_in_password.dart';
-import 'package:hj_banking_mobile/auth/log_in/models/log_in_username.dart';
+import 'package:hcb_hackathon/auth/log_in/models/log_in_password.dart';
+import 'package:hcb_hackathon/auth/log_in/models/log_in_username.dart';
 
 class LogInState extends Equatable {
   const LogInState({

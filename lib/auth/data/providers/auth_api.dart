@@ -1,7 +1,6 @@
 import 'package:flutter/foundation.dart';
-import 'package:hj_banking_mobile/auth/models/token_response.dart';
-import 'package:hj_banking_mobile/common/api/api_client.dart';
-import 'package:hj_banking_mobile/common/api/index.dart';
+import 'package:hcb_hackathon/auth/models/token_response.dart';
+import 'package:hcb_hackathon/common/api/api_client.dart';
 import 'package:injectable/injectable.dart';
 
 @injectable

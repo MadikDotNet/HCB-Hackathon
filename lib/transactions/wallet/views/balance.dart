@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hj_banking_mobile/themes/theme_constants.dart';
+import 'package:hcb_hackathon/themes/theme_constants.dart';
 
 class Balance extends StatelessWidget {
   const Balance({Key? key}) : super(key: key);

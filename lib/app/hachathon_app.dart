@@ -1,22 +1,23 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:hj_banking_mobile/app/app_routes.dart';
-import 'package:hj_banking_mobile/auth/blocs/auth_bloc.dart';
-import 'package:hj_banking_mobile/auth/blocs/auth_event.dart';
-import 'package:hj_banking_mobile/auth/blocs/auth_state.dart';
-import 'package:hj_banking_mobile/auth/views/welcome_screen.dart';
-import 'package:hj_banking_mobile/home/views/home_screen.dart';
-import 'package:hj_banking_mobile/themes/theme_constants.dart';
+import 'package:hcb_hackathon/auth/blocs/auth_event.dart';
+import 'package:hcb_hackathon/auth/blocs/auth_state.dart';
+import 'package:hcb_hackathon/auth/blocs/bloc_auth.dart';
+import 'package:hcb_hackathon/auth/views/welcome_screen.dart';
+import 'package:hcb_hackathon/home/views/home_screen.dart';
+import 'package:hcb_hackathon/themes/theme_constants.dart';
 
-class HJBankingApp extends StatefulWidget {
+import 'app_routes.dart';
+
+class HCBHackathon extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    return _HJBankingAppState();
+    return _HCBHackathonState();
   }
 }
 
-class _HJBankingAppState extends State<HJBankingApp> {
+class _HCBHackathonState extends State<HCBHackathon> {
   @override
   void initState() {
     super.initState();

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:hj_banking_mobile/cards/tied/views/tied.dart';
-import 'package:hj_banking_mobile/themes/theme_constants.dart';
-import 'package:hj_banking_mobile/transactions/deposit/views/deposit_screen.dart';
-import 'package:hj_banking_mobile/transactions/wallet/views/balance.dart';
+import 'package:hcb_hackathon/cards/tied/views/tied.dart';
+import 'package:hcb_hackathon/themes/theme_constants.dart';
+import 'package:hcb_hackathon/transactions/deposit/views/deposit_screen.dart';
+
+import 'balance.dart';
 
 class WalletScreen extends StatelessWidget {
   const WalletScreen({Key? key}) : super(key: key);

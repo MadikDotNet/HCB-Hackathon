@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:hj_banking_mobile/auth/blocs/auth_bloc.dart';
-import 'package:hj_banking_mobile/auth/data/auth_repository.dart';
-import 'package:hj_banking_mobile/auth/log_in/blocs/log_in_bloc.dart';
-import 'package:hj_banking_mobile/auth/log_in/views/log_in_screen.dart';
-import 'package:hj_banking_mobile/auth/sign-up/blocs/sign_up_bloc.dart';
-import 'package:hj_banking_mobile/auth/sign-up/views/sign_up_screen.dart';
-import 'package:hj_banking_mobile/config/di.dart';
+import 'package:hcb_hackathon/auth/blocs/bloc_auth.dart';
+import 'package:hcb_hackathon/auth/data/auth_repository.dart';
+import 'package:hcb_hackathon/auth/log_in/blocs/log_in_bloc.dart';
+import 'package:hcb_hackathon/auth/log_in/views/log_in_screen.dart';
+import 'package:hcb_hackathon/auth/sign-up/blocs/sign_up_bloc.dart';
+import 'package:hcb_hackathon/auth/sign-up/views/sign_up_screen.dart';
+import 'package:hcb_hackathon/config/di.dart';
 
 abstract class AppRoutes {
   static final logIn = "/login";

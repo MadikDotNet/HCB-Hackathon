@@ -1,11 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:hj_banking_mobile/home/views/custom_app_bar.dart';
-import 'package:hj_banking_mobile/profile/views/edit/pin_code/pin_code_edit_screen.dart';
-import 'package:hj_banking_mobile/profile/edit/email/views/email_screen.dart';
-import 'package:hj_banking_mobile/profile/edit/password/views/password_screen.dart';
-import 'package:hj_banking_mobile/themes/text_constants.dart';
-import 'package:hj_banking_mobile/themes/theme_constants.dart';
+import 'package:hcb_hackathon/home/views/custom_app_bar.dart';
+import 'package:hcb_hackathon/profile/edit/email/views/email_screen.dart';
+import 'package:hcb_hackathon/profile/edit/password/views/password_screen.dart';
+import 'package:hcb_hackathon/themes/text_constants.dart';
+import 'package:hcb_hackathon/themes/theme_constants.dart';
+
+import 'edit/pin_code/pin_code_edit_screen.dart';
 
 class EditScreen extends StatefulWidget {
   const EditScreen({Key? key}) : super(key: key);

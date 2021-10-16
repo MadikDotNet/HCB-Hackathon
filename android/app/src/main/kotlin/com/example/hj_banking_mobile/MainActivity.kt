@@ -1,4 +1,4 @@
-package com.example.hj_banking_mobile
+package com.example.hcb_hackathon
 
 import io.flutter.embedding.android.FlutterActivity
 

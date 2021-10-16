@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:hj_banking_mobile/auth/sign-up/models/sign_up_page.dart';
+import 'package:hcb_hackathon/auth/sign-up/models/sign_up_page.dart';
 
 abstract class SignUpEvent extends Equatable {
   const SignUpEvent();

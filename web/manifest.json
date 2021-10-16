@@ -1,6 +1,6 @@
 {
-    "name": "hj_banking_mobile",
-    "short_name": "hj_banking_mobile",
+    "name": "hcb_hackathon",
+    "short_name": "hcb_hackathon",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

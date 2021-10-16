@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:hj_banking_mobile/home/views/custom_app_bar.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:hj_banking_mobile/themes/text_constants.dart';
-import 'package:hj_banking_mobile/themes/theme_constants.dart';
-import 'package:hj_banking_mobile/themes/filled_button.dart';
-import 'package:hj_banking_mobile/themes/filled_input_field.dart';
-import 'package:hj_banking_mobile/cards/tied/views/list.dart';
+import 'package:hcb_hackathon/home/views/custom_app_bar.dart';
+import 'package:hcb_hackathon/themes/filled_button.dart';
+import 'package:hcb_hackathon/themes/filled_input_field.dart';
+import 'package:hcb_hackathon/themes/text_constants.dart';
+import 'package:hcb_hackathon/themes/theme_constants.dart';
 
 class WithdrawScreen extends StatefulWidget {
   const WithdrawScreen({Key? key}) : super(key: key);
@@ -98,7 +97,7 @@ class _WithdrawScreenState extends State<WithdrawScreen> {
             SizedBox(height: kSpacingUnit),
             Row(
               children: [
-                List(),
+
               ],
             ),
             SizedBox(height: kSpacingUnit * 2),

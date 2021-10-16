@@ -1,10 +1,11 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:hj_banking_mobile/app/hachathon_app.dart';
-import 'package:hj_banking_mobile/auth/blocs/auth_bloc.dart';
-import 'package:hj_banking_mobile/config/di.dart';
-import 'package:hj_banking_mobile/themes/theme_constants.dart';
+import 'package:hcb_hackathon/themes/theme_constants.dart';
+
+import 'app/hachathon_app.dart';
+import 'auth/blocs/bloc_auth.dart';
+import 'config/di.dart';
 import 'home/blocs/bottom_navigation_bloc.dart';
 
 void main() {
@@ -24,7 +25,7 @@ void main() {
           scaffoldBackgroundColor: kBackgroundColor,
           fontFamily: 'Poppins',
         ),
-        home: HJBankingApp(),
+        home: HCBHackathon(),
       ),
     ),
   );

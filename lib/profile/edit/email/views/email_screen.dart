@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:hj_banking_mobile/home/views/custom_app_bar.dart';
-import 'package:hj_banking_mobile/themes/filled_button.dart';
-import 'package:hj_banking_mobile/themes/filled_input_field.dart';
-import 'package:hj_banking_mobile/themes/text_constants.dart';
-import 'package:hj_banking_mobile/themes/theme_constants.dart';
+import 'package:hcb_hackathon/home/views/custom_app_bar.dart';
+import 'package:hcb_hackathon/themes/filled_button.dart';
+import 'package:hcb_hackathon/themes/filled_input_field.dart';
+import 'package:hcb_hackathon/themes/text_constants.dart';
+import 'package:hcb_hackathon/themes/theme_constants.dart';
 
 class EmailScreen extends StatelessWidget {
   const EmailScreen({Key? key}) : super(key: key);

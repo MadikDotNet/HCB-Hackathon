@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hj_banking_mobile/auth/views/text_field_container.dart';
-import 'package:hj_banking_mobile/themes/theme_constants.dart';
+import 'package:hcb_hackathon/auth/views/text_field_container.dart';
+import 'package:hcb_hackathon/themes/theme_constants.dart';
 
 class RoundedInputField extends StatelessWidget {
   final String hintText;

@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:hj_banking_mobile/profile/views/edit_screen.dart';
-import 'package:hj_banking_mobile/profile/views/support_screen.dart';
-import 'package:hj_banking_mobile/themes/text_constants.dart';
-import 'package:hj_banking_mobile/themes/theme_constants.dart';
-import 'package:hj_banking_mobile/transactions/wallet/views/balance.dart';
+import 'package:hcb_hackathon/profile/views/support_screen.dart';
+import 'package:hcb_hackathon/themes/text_constants.dart';
+import 'package:hcb_hackathon/themes/theme_constants.dart';
+import 'package:hcb_hackathon/transactions/wallet/views/balance.dart';
+
+import 'edit_screen.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({Key? key}) : super(key: key);

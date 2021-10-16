@@ -1,10 +1,10 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:hj_banking_mobile/auth/sign-up/blocs/sign_up_event.dart';
-import 'package:hj_banking_mobile/auth/sign-up/blocs/sign_up_state.dart';
-import 'package:hj_banking_mobile/auth/sign-up/models/sign_up_email.dart';
-import 'package:hj_banking_mobile/auth/sign-up/models/sign_up_password.dart';
-import 'package:hj_banking_mobile/auth/sign-up/models/sign_up_phone_number.dart';
-import 'package:hj_banking_mobile/auth/sign-up/models/sign_up_user_name.dart';
+import 'package:hcb_hackathon/auth/sign-up/blocs/sign_up_event.dart';
+import 'package:hcb_hackathon/auth/sign-up/blocs/sign_up_state.dart';
+import 'package:hcb_hackathon/auth/sign-up/models/sign_up_email.dart';
+import 'package:hcb_hackathon/auth/sign-up/models/sign_up_password.dart';
+import 'package:hcb_hackathon/auth/sign-up/models/sign_up_phone_number.dart';
+import 'package:hcb_hackathon/auth/sign-up/models/sign_up_user_name.dart';
 
 class SignUpBloc extends Bloc<SignUpEvent, SignUpState> {
   SignUpBloc() : super(const SignUpState());

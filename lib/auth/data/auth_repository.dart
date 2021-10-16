@@ -1,6 +1,6 @@
-import 'package:hj_banking_mobile/auth/data/providers/auth_api.dart';
-import 'package:hj_banking_mobile/auth/data/providers/token_storage.dart';
-import 'package:hj_banking_mobile/common/api/api_client.dart';
+import 'package:hcb_hackathon/auth/data/providers/auth_api.dart';
+import 'package:hcb_hackathon/auth/data/providers/token_storage.dart';
+import 'package:hcb_hackathon/common/api/api_client.dart';
 import 'package:injectable/injectable.dart';
 
 @singleton

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:hj_banking_mobile/themes/theme_constants.dart';
+import 'package:hcb_hackathon/themes/theme_constants.dart';
 
 final kHeadingTextStyle = TextStyle(
   fontSize: ScreenUtil().setSp(24),

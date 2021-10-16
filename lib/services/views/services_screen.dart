@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:hj_banking_mobile/themes/theme_constants.dart';
-import 'package:hj_banking_mobile/transactions/wallet/views/balance.dart';
-import 'package:hj_banking_mobile/transactions/transfer/views/transfer_screen.dart';
-import 'package:hj_banking_mobile/transactions/withdraw/views/withdraw_screen.dart';
+import 'package:hcb_hackathon/themes/theme_constants.dart';
+import 'package:hcb_hackathon/transactions/transfer/views/transfer_screen.dart';
+import 'package:hcb_hackathon/transactions/wallet/views/balance.dart';
+import 'package:hcb_hackathon/transactions/withdraw/views/withdraw_screen.dart';
 
 class ServicesScreen extends StatefulWidget {
   const ServicesScreen({Key? key}) : super(key: key);

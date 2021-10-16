@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:hj_banking_mobile/cards/tied/views/list.dart';
-import 'package:hj_banking_mobile/cards/tied/views/new/views/add_new_card_screen.dart';
-import 'package:hj_banking_mobile/themes/theme_constants.dart';
+import 'package:hcb_hackathon/themes/theme_constants.dart';
+
+import 'new/views/add_new_card_screen.dart';
 
 class TiedCards extends StatelessWidget {
   const TiedCards({Key? key}) : super(key: key);
@@ -39,7 +39,7 @@ class TiedCards extends StatelessWidget {
           SizedBox(height: kSpacingUnit * 2),
           Row(
             children: [
-              List(),
+
             ],
           ),
           SizedBox(height: kSpacingUnit * 2),
