@@ -11,8 +11,8 @@ class Balance extends StatelessWidget {
         Container(
           width: double.infinity,
           margin: EdgeInsets.only(top: kSpacingUnit * 2),
-          padding: EdgeInsets.all(kSpacingUnit * 1.5),
-          decoration: BoxDecoration(
+          padding: EdgeInsets.all(kSpacingUnit * 1),
+          /*decoration: BoxDecoration(
             image: DecorationImage(
               image: AssetImage('assets/images/balance_bg.png'),
               fit: BoxFit.cover,
@@ -27,7 +27,7 @@ class Balance extends StatelessWidget {
             borderRadius: BorderRadius.all(
               Radius.circular(kSpacingUnit),
             ),
-          ),
+          ),*/
           child: Stack(
             children: [
               Align(
@@ -38,37 +38,28 @@ class Balance extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
+                        ImageIcon(
+                          AssetImage('assets/images/iphone.png'),
+                        ),
                         Text(
-                          '+7 701 155 34 15',
+                          'Смартфон Apple iPhone 13 \nPro 128GB Sierra Blue',
                           style: TextStyle(
-                            color: Colors.white,
+                            color: Colors.black,
                             fontSize: 16,
-                            fontWeight: FontWeight.bold,
+                            fontFamily: 'Roboto'
                           ),
                         ),
                         Text(
-                          'Username',
+                          '619 990 ₸ ',
                           style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 16,
+                            color: Colors.black,
+                            fontSize: 23,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
                       ],
                     ),
                     SizedBox(height: kSpacingUnit),
-                    Text(
-                      'Баланс кошелька',
-                      style: TextStyle(color: Colors.white, fontSize: 16),
-                    ),
-                    Text(
-                      '5,000 тг',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 35,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
                   ],
                 ),
               ),

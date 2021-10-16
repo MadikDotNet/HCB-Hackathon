@@ -17,6 +17,7 @@ class ProfileScreen extends StatelessWidget {
         child: ListView(
           children: [
             Balance(),
+            Balance(),
             Container(
               width: double.infinity,
               margin: EdgeInsets.symmetric(vertical: kSpacingUnit * 2),
@@ -39,7 +40,7 @@ class ProfileScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   _listItem(
-                      context, 'assets/images/mycards.png', 'Мои карты', ''),
+                      context, 'assets/images/mycards.png', 'Смартфон Apple iPhone 13 \n Pro 128GB Sierra Blue', ''),
                   _listItem(context, 'assets/images/security.png',
                       'Доступ и безопасность', EditScreen()),
                   _listItem(context, 'assets/images/userguide.png',
